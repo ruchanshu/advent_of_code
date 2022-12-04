@@ -1,5 +1,4 @@
-URL = "https://adventofcode.com/2022"
-a = "/day/1/input"
+URL = "https://adventofcode.com/"
 
 ROCK = "rock"
 PAPER = "paper"
