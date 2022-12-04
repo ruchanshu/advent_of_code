@@ -17,7 +17,7 @@ class AoCData:
                 if key == "AOC_SESSION":
                     self._session = value
                     return
-                raise RuntimeError("AOC_SESSION not found")
+                raise RuntimeError("AOC_SESSION not found in .session file")
 
     @cached_property
     def __cookies(self):
