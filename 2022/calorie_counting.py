@@ -27,7 +27,7 @@ class ElvesDetails:
 
 if __name__ == "__main__":
     elves_details = []
-    day_1_data = os.path.join("day_1", "input_1.txt")
+    day_1_data = os.path.join("data/day_1", "input_1.txt")
     with open(day_1_data) as data:
         elf_count = 0
         elf_foods = []

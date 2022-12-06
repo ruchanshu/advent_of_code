@@ -32,7 +32,7 @@ if __name__ == "__main__":
     badge_priorities = 0
     rucksacks_group = []
     count = 0
-    input_data = os.path.join("day_3", "input_3.txt")
+    input_data = os.path.join("data/day_3", "input_3.txt")
     with open(input_data, "r") as file:
         for raw_line in file.readlines():
             line = raw_line.strip("\n")

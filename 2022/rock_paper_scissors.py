@@ -82,7 +82,7 @@ if __name__ == "__main__":
     count = 0
     total_score = 0
     strategic_total_score = 0
-    input_data = os.path.join("day_2", "input_2.csv")
+    input_data = os.path.join("data/day_2", "input_2.csv")
     with open(input_data) as file:
         reader = csv.reader(file)
         for row in reader:
