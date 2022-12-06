@@ -31,12 +31,13 @@ class AoCData:
         today = date.today()
         return f"{URL}{today.year}/day/{today.day}/input"
 
-    def get_input(self):
-        response = requests.get(self.input_url, cookies=self.__cookies)
+    def get_input(self, url=None):
+        url = url if url else self.input_url
+        response = requests.get(url, cookies=self.__cookies)
         if response.ok:
             return response.text.strip()
         response.raise_for_status()
 
-    def get_input_lines(self):
-        data = self.get_input()
+    def get_input_lines(self, url=None):
+        data = self.get_input(url)
         return data.split("\n")
